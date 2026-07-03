@@ -28,13 +28,25 @@ tags: ["SQL", "GROUP BY"]
 ---
 ```
 
-## Backend / Frontend 폴더 전용
+## Frontend 폴더 전용
+
+```yaml
+---
+title: "시맨틱 태그 정리"
+category: "Frontend"
+stack: "HTML/CSS"   # HTML/CSS / JavaScript / TypeScript / React
+date: 2026-07-03
+tags: ["HTML", "Frontend"]
+---
+```
+
+## Backend 폴더 전용
 
 ```yaml
 ---
 title: "Nest.js 모듈 구조 정리"
 category: "Backend"
-stack: "Nest.js"   # HTML/CSS / JavaScript / TypeScript / React / Nest.js
+stack: "Nest.js"
 date: 2026-07-03
 tags: ["Nest.js", "Backend"]
 ---
