@@ -12,8 +12,8 @@
 | [Daily](./Daily) | 매일의 학습/작업 기록 |
 | [Project](./Project) | 진행한 프로젝트 정리 |
 | [SQL](./SQL) | Oracle SQL, SQL Server, BigQuery, MySQL, DuckDB, MongoDB |
-| [Backend](./Backend) | HTML/CSS, JavaScript, TypeScript, React, Nest.js |
-| [Frontend](./Frontend) | 프론트엔드 관련 학습 |
+| [Backend](./Backend) | Nest.js 등 서버/백엔드 |
+| [Frontend](./Frontend) | HTML/CSS, JavaScript, TypeScript, React |
 | [Python](./Python) | Python 학습 기록 |
 | [R](./R) | R 학습 기록 |
 | [Statistics](./Statistics) | 통계 이론 및 응용 |
