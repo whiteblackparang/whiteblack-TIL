@@ -55,8 +55,8 @@ tags: ["Nest.js", "Backend"]
 ---
 title: "Gradient Descent 정리"
 category: "Data-Science"
+topic: "LLM"          # ML / DL / NLP / LLM
 source: "Coursera"   # Coursera / edX / 자체학습
-course: "Machine Learning Specialization"
 date: 2026-07-03
 tags: ["ML", "Gradient Descent"]
 ---
@@ -74,16 +74,15 @@ date: 2026-07-03
 tags: ["독서", "클린코드"]
 ---
 ```
-
 ---
 
-## 파일명 규칙
-
+## Cloud 폴더 전용
+```yaml
+---
+title: "EC2 인스턴스 생성하기"
+category: "Cloud"
+provider: "AWS"   # AWS / GCP / Azure
+date: 2026-07-04
+tags: ["Cloud", "EC2"]
+---
 ```
-YYYY-MM-DD-제목-슬러그.md
-```
-
-예시:
-- `2026-07-03-oracle-window-function.md`
-- `2026-07-03-nestjs-module-structure.md`
-- `2026-07-03-gradient-descent.md`
