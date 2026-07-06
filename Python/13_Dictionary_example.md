@@ -1,4 +1,9 @@
-# 11-1.md
+---
+title: "Dictionary 예제 모음"
+category: "Python"
+date: 2026-07-06
+tags: ["Python", "Dictionary"]
+---
 
 ## 딕셔너리란?
 

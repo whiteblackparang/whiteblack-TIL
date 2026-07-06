@@ -1,3 +1,11 @@
+---
+title: "CSS 핵심 개념 정리"
+category: "Frontend"
+stack: "HTML/CSS"
+date: 2026-07-03
+tags: ["CSS", "개념정리"]
+---
+
 ## 1. CSS란?
 
 - **Cascading Style Sheets**의 약자. 

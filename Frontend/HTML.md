@@ -1,3 +1,11 @@
+---
+title: "HTML 핵심 개념 정리"
+category: "Frontend"
+stack: "HTML/CSS"
+date: 2026-07-03
+tags: ["HTML", "개념정리"]
+---
+
 # HTML 핵심 개념 정리
 
 ### 1. HTML이란?

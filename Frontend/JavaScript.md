@@ -1,3 +1,11 @@
+---
+title: "JavaScript 핵심 개념 정리"
+category: "Frontend"
+stack: "JavaScript"
+date: 2026-07-03
+tags: ["JavaScript", "개념정리"]
+---
+
 ## 1. JavaScript란?
 
 - HTML이 구조, CSS가 디자인, **JavaScript는 동작/로직**을 담당하는 프로그래밍 언어.
