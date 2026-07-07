@@ -1,63 +1,38 @@
-# Astro Starter Kit: Blog
+# whiteblack TIL
 
-```sh
-npm create astro@latest -- --template blog
-```
+**[whiteblackparang.github.io/whiteblack-TIL](https://whiteblackparang.github.io/whiteblack-TIL/)**
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+[GitHub](https://github.com/whiteblackparang) · [LinkedIn](https://www.linkedin.com/in/jonghunlee/?locale=ko)
 
-Features:
+@whiteblackparang 이 오늘 새로 배운 것을 기록하는 TIL(Today I Learned) 저장소입니다.
+작성 규칙은 [TEMPLATE.md](./TEMPLATE.md)를 참고하세요.
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and Open Graph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+## 카테고리
 
-## 🚀 Project Structure
+| 폴더 | 내용 |
+|---|---|
+| [Daily](./Daily) | 매일의 학습/작업 기록 |
+| [Project](./Project) | 진행한 프로젝트 정리 |
+| [SQL](./SQL) | Oracle SQL, SQL Server, BigQuery, MySQL, DuckDB, MongoDB |
+| [Backend](./Backend) | Django, Nest.js 등 서버/백엔드 |
+| [Frontend](./Frontend) | HTML/CSS, JavaScript, TypeScript, React, Vue, Angular |
+| [Python](./Python) | Python 학습 기록 |
+| [R](./R) | R 학습 기록 |
+| [Statistics](./Statistics) | 통계 이론 및 응용 |
+| [Data-Science](./Data-Science) | ML/DL/NLP/LangChain 등 |
+| [Computer-Science](./Computer-Science) | Coursera / edX 강의 기록 |
+| [Book-Reading](./Book-Reading) | 독서 기록 |
+| [Cloud](./Cloud) | AWS/GCP/Azure 등 |
+| [Algorithm](./Algorithm) | 알고리즘 문제풀이 |
 
-Inside of your Astro project, you'll see the following folders and files:
+## 로컬에서 띄우기
+$ npm install
+$ npm run dev
 
-```text
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+## 빌드 및 배포
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+GitHub Actions로 자동화되어 있습니다. `main` 브랜치에 push하면 자동으로 빌드 후 GitHub Pages에 배포됩니다. ([deploy.yml](./.github/workflows/deploy.yml) 참고)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+수동으로 빌드만 확인하고 싶다면:
+$ npm run build
+$ npm run preview
