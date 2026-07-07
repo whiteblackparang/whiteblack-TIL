@@ -1,42 +1,63 @@
-# whiteblack TIL
+# Astro Starter Kit: Blog
 
-- Data Science와 Business Management를 공부했습니다. 
-- 데이터베이스/백엔드/프론트엔드까지 폭넓게 공부한 내용을 이곳에 TIL(Today I Learned) 형태로 기록합니다.
+```sh
+npm create astro@latest -- --template blog
+```
 
----
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## 카테고리
+Features:
 
-| 폴더 | 내용 |
-|---|---|
-| [Daily](./Daily) | 매일의 학습/작업 기록 |
-| [Project](./Project) | 진행한 프로젝트 정리 |
-| [SQL](./SQL) | Oracle SQL, SQL Server, BigQuery, MySQL, DuckDB, MongoDB |
-| [Backend](./Backend) | Nest.js 등 서버/백엔드 |
-| [Frontend](./Frontend) | HTML/CSS, JavaScript, TypeScript, React |
-| [Python](./Python) | Python 학습 기록 |
-| [R](./R) | R 학습 기록 |
-| [Statistics](./Statistics) | 통계 이론 및 응용 |
-| [Data-Science](./Data-Science) | 전공 - Coursera / edX 강의 기록 |
-| [Computer-Science](./Computer-Science) | 관심 분야 - Coursera / edX 강의 기록 |
-| [Book-Reading](./Book-Reading) | 독서 기록 |
+- ✅ Minimal styling (make it your own!)
+- ✅ 100/100 Lighthouse performance
+- ✅ SEO-friendly with canonical URLs and Open Graph data
+- ✅ Sitemap support
+- ✅ RSS Feed support
+- ✅ Markdown & MDX support
 
----
+## 🚀 Project Structure
 
-## 학습완료 / 학습중
+Inside of your Astro project, you'll see the following folders and files:
 
-- HTML/CSS
-- JavaScript
-- Python
-- SQL
-- Tableau
+```text
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── content/
+│   ├── layouts/
+│   └── pages/
+├── astro.config.mjs
+├── README.md
+├── package.json
+└── tsconfig.json
+```
 
-## 2026 활동
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-- 매일 TIL 작성 습관 만들기
-- Data Science 전공 심화 학습 (Coursera / edX)
-- 백엔드/프론트엔드 기초 다지기
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
----
+The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
 
-> 기록이 쌓이면 [Astro](https://astro.build)로 정적 사이트를 구축할 예정입니다.
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Credit
+
+This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).

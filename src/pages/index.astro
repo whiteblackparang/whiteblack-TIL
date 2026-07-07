@@ -1,0 +1,89 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import Sidebar from '../components/Sidebar.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{SITE_TITLE}</title>
+	</head>
+	<body>
+		<Header />
+		<main class="layout">
+			<Sidebar />
+			<div class="content">
+				<h1>안녕하세요.<br />기록하며 성장하는 whiteblack 입니다.</h1>
+				<p class="intro">
+					Business Management를 전공하고 Data Science를 부전공하며,
+					Brigham Young University - Idaho 졸업했습니다<br />
+					데이터베이스/백엔드/프론트엔드까지 폭넓게 학습한 내용을 이곳에 TIL(Today I Learned) 형태로 기록합니다.
+				</p>
+
+				<hr />
+
+				<h2>현재 학습중</h2>
+				<ul>
+					<li>HTML/CSS, JavaScript, TypeScript</li>
+					<li>React / Vue / Angular</li>
+					<li>Python, SQL (Oracle, MySQL, PostgreSQL, BigQuery 등)</li>
+					<li>Django, Nest.js</li>
+					<li>Machine Learning / Deep Learning / NLP / LangChain, LangGraph</li>
+				</ul>
+
+				<hr />
+
+				<h2>2026 활동</h2>
+				<ul>
+					<li>1. 기록 </li>
+					<li>2. 면접 </li>
+					<li>3. 코테 </li>
+				</ul>
+			</div>
+		</main>
+		<Footer />
+
+		<style>
+			.layout {
+				display: flex;
+				width: 960px;
+				margin: 0 auto;
+				gap: 3em;
+				padding-top: 2em;
+			}
+			.content {
+				flex: 1;
+			}
+			h1 {
+				font-size: 2rem;
+				line-height: 1.4;
+				margin-bottom: 1em;
+			}
+			.intro {
+				font-size: 1.05rem;
+				line-height: 1.7;
+				color: rgb(var(--gray-dark));
+				margin-bottom: 2em;
+			}
+			h2 {
+				margin-top: 1.5em;
+			}
+			ul {
+				line-height: 1.9;
+			}
+			@media (max-width: 720px) {
+				.layout {
+					flex-direction: column;
+					width: 100%;
+					padding: 1em;
+				}
+			}
+		</style>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+---
+const categories = [
+	'Daily',
+	'Project',
+	'SQL',
+	'Backend',
+	'Frontend',
+	'Python',
+	'R',
+	'Statistics',
+	'Data-Science',
+	'Computer-Science',
+	'Book-Reading',
+	'Cloud',
+	'Algorithm',
+];
+---
+
+<nav class="sidebar">
+	<ul>
+		<li><a href="/blog">전체 글</a></li>
+		{
+			categories.map((cat) => (
+				<li>
+					<a href={`/blog/category/${cat}`}>{cat}</a>
+				</li>
+			))
+		}
+	</ul>
+</nav>
+
+<style>
+	.sidebar {
+		width: 220px;
+		flex-shrink: 0;
+		padding: 1.5em 1em;
+	}
+	.sidebar ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.sidebar li {
+		margin-bottom: 0.3em;
+	}
+	.sidebar a {
+		display: block;
+		padding: 0.4em 0.8em;
+		color: rgb(var(--gray-dark));
+		text-decoration: none;
+		border-radius: 8px;
+		font-size: 0.95rem;
+	}
+	.sidebar a:hover {
+		background-color: rgba(var(--accent), 0.1);
+		color: rgb(var(--accent));
+	}
+</style>
