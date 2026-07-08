@@ -19,7 +19,13 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<main class="layout">
 			<Sidebar />
 			<div class="content">
-				<h1>안녕하세요.<br />기록하며 성장하는 whiteblack 입니다.</h1>
+				<div class="hero">
+					<h1 class="hero-title">데이터로 말하고,<br />기록으로 증명한다.</h1>
+					<p class="hero-sub">배움에는 끝이 없고, 기록에는 멈춤이 없다.</p>
+					<div class="hero-bar"></div>
+				</div>
+
+				<h2>안녕하세요.<br />기록하며 성장하는 whiteblack 입니다.</h2>
 				<p class="intro">
 					Business Management를 전공하고 Data Science를 부전공하며,
 					Brigham Young University - Idaho 졸업했습니다<br />
@@ -41,9 +47,9 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 				<h2>2026 활동</h2>
 				<ul>
-					<li>1. 기록 </li>
-					<li>2. 면접 </li>
-					<li>3. 코테 </li>
+					<li>새로운 기록을 더해 갑니다. TIL도 작성하지만 velog와 네이버 블로그에 배운 내용과 새로운 내용을 담습니다. </li>
+					<li>회사에 대한 정보 및 채용공고를 수집해 지원하고 있습니다. 데이터 분석가, 데이터 사이언티스트, AI 엔지니어 등 </li>
+					<li>프로그래머스를 포함해서 Leetcode, HackerRank 등의 코딩테스트 사이트를 통해 연습합니다 </li>
 				</ul>
 			</div>
 		</main>
@@ -51,19 +57,39 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 		<style>
 			.layout {
-			display: flex;
-			width: 100%;
-			max-width: 1400px;
-			margin: 0 auto;
-			gap: 3em;
-			padding: 2em 2em 0;
-			box-sizing: border-box;
+				display: flex;
+				width: 100%;
+				max-width: 1400px;
+				margin: 0 auto;
+				gap: 3em;
+				padding: 2em 2em 0;
+				box-sizing: border-box;
 			}
 			.content {
 				flex: 1;
 			}
-			h1 {
-				font-size: 2rem;
+			.hero {
+				margin-bottom: 2em;
+			}
+			.hero-title {
+				font-size: 2.6rem;
+				font-weight: 800;
+				line-height: 1.25;
+				margin-bottom: 0.5em;
+			}
+			.hero-sub {
+				font-size: 1rem;
+				color: rgb(var(--gray-dark));
+				margin-bottom: 1em;
+			}
+			.hero-bar {
+				width: 100px;
+				height: 6px;
+				background: rgb(var(--accent));
+				border-radius: 3px;
+			}
+			h2 {
+				font-size: 1.6rem;
 				line-height: 1.4;
 				margin-bottom: 1em;
 			}
@@ -73,9 +99,6 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 				color: rgb(var(--gray-dark));
 				margin-bottom: 2em;
 			}
-			h2 {
-				margin-top: 1.5em;
-			}
 			ul {
 				line-height: 1.9;
 			}
@@ -84,6 +107,9 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 					flex-direction: column;
 					width: 100%;
 					padding: 1em;
+				}
+				.hero-title {
+					font-size: 1.8rem;
 				}
 			}
 		</style>
