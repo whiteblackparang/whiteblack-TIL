@@ -20,23 +20,24 @@ const base = import.meta.env.BASE_URL;
 <style>
 	header {
 		margin: 0;
-		padding: 0 1em;
+		padding: 0 2em;
 		background: white;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+	}
+	nav {
+		display: flex;
+		align-items: center;
+		gap: 1.5em;
+		max-width: 1400px;
+		margin: 0 auto;
 	}
 	h2 {
 		margin: 0;
 		font-size: 1em;
 	}
-
 	h2 a,
 	h2 a.active {
 		text-decoration: none;
-	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
 	}
 	nav a {
 		padding: 1em 0.5em;

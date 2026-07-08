@@ -20,9 +20,12 @@ const posts = (await getCollection('blog')).sort(
 		<style>
 			.layout {
 				display: flex;
-				width: 960px;
+				width: 100%;
+				max-width: 1400px;
 				margin: 0 auto;
 				gap: 2em;
+				padding: 2em;
+				box-sizing: border-box;
 			}
 			.content {
 				flex: 1;
