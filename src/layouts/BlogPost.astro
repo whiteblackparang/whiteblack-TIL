@@ -9,12 +9,12 @@ import Sidebar from '../components/Sidebar.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, date, updatedDate, heroImage } = Astro.props;
+const { title, description, date, heroImage } = Astro.props;
 ---
 
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description ?? ''} />
 		<style>
 			.layout {
 				display: flex;
@@ -80,14 +80,8 @@ const { title, description, date, updatedDate, heroImage } = Astro.props;
 					<div class="prose">
 						<div class="title">
 							<div class="date">
-								<FormattedDate date={date} />
-								{
-									updatedDate && (
-										<div class="last-updated-on">
-											Last updated on <FormattedDate date={updatedDate} />
-										</div>
-									)
-								}
+							<FormattedDate date={date} />
+							</div>
 							</div>
 							<h1>{title}</h1>
 							<hr />
