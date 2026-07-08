@@ -53,10 +53,15 @@ const postsByCategory = categories.map((cat) => {
 </nav>
 
 <style>
-	.sidebar {
-		width: 240px;
-		flex-shrink: 0;
-		padding: 1.5em 1em;
+	.sidebar::-webkit-scrollbar {
+		width: 6px;
+	}
+	.sidebar::-webkit-scrollbar-thumb {
+		background-color: rgba(var(--gray), 0.4);
+		border-radius: 3px;
+	}
+	.sidebar::-webkit-scrollbar-track {
+		background: transparent;
 	}
 	.all-posts {
 		display: block;
