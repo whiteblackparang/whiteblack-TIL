@@ -3,9 +3,9 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
- 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
 :root {
 	/* 포인트 컬러: 파랑 계열이 메인, 나머지는 카테고리/하이라이트용 */
 	--accent: #2b6ce6;
@@ -24,8 +24,8 @@
 		0 2px 6px rgba(var(--gray), 15%), 0 8px 24px rgba(var(--gray), 18%),
 		0 16px 32px rgba(var(--gray), 18%);
 
-	--font-display: 'Fraunces', serif;
-	--font-body: 'Inter', var(--font-atkinson), sans-serif;
+	--font-display: 'Pretendard', sans-serif;
+	--font-body: 'Pretendard', var(--font-atkinson), sans-serif;
 	--font-mono: 'JetBrains Mono', monospace;
 }
 body {
