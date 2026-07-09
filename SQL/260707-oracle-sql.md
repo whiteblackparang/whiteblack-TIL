@@ -1,5 +1,5 @@
 ---
-title: "오라클 SQL"
+title: "260707 [오라클 SQL] 기초: RDBMS 개념과 SQL 명령어 종류"
 category: "SQL"
 dialect: "Oracle"
 date: 2026-07-07

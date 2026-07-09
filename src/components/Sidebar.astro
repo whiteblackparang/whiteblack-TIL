@@ -53,6 +53,15 @@ const postsByCategory = categories.map((cat) => {
 </nav>
 
 <style>
+	.sidebar {
+		width: 240px;
+		flex-shrink: 0;
+		padding: 1.5em 1em;
+		position: sticky;
+		top: 0;
+		max-height: 100vh;
+		overflow-y: auto;
+	}
 	.sidebar::-webkit-scrollbar {
 		width: 6px;
 	}
